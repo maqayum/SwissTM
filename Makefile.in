@@ -1,10 +1,4 @@
 ########################################
-# installation specific dirs
-LIBPAPI_DIR = /home/dragojev/local64
-
-ATOMIC_OPS_INCLUDE = /home/dragojev/local/libatomicops/include/
-
-########################################
 # set general variables
 SOLARIS_CPP = /home/dragojev/local/gcc/bin/g++
 SOLARIS_CC = /home/dragojev/local/gcc/bin/gcc
@@ -35,7 +29,7 @@ endif
 
 ########################################
 # set compiler and linker options
-COMMON_CPPFLAGS = -Wall -I$(ATOMIC_OPS_INCLUDE) -fno-strict-aliasing
+COMMON_CPPFLAGS = -Wall -fno-strict-aliasing
 COMMON_LDFLAGS  =
 
 CPPFLAGS = $(COMMON_CPPFLAGS)
